@@ -20,4 +20,9 @@ upstream 0.18.1 → 0.18.101 … Always higher than the build it replaces.
 
 1. Rebase the patches onto the new upstream tag, build, run the test matrix and look at the renders.
 2. Bump the version, package, compute SHA-256.
-3. Publish: `gh release create v<ver> <zip> SHA256SUMS.txt` — only after review.
+3. Publish: `gh release create v<ver> <zip> SHA256SUMS.txt third-party-sources/jbigkit/*` — only after review.
+
+## Third-party sources
+
+GPL components in the OCR bundle have their complete source in `third-party-sources/` and attached to
+each release (currently JBIG-KIT 2.1, see `third-party-sources/jbigkit/README.md`).
